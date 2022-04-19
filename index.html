@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="da">
+        <div id="duhap">
+            <div class="text">
+                <p id="fir"></p>
+            </div>
+            <button id="duhapSelect">×</button>
+            <div class="text">
+                <p id="sec"></p>
+            </div>
+            <button id="calc">조합하기</button>
+        </div>
+        <p id="haveNumber">you have 2 units</p>
+        <div id="have">
+            <div class="have" id="haveLine1">
+                <button class="elements" id="metre" onclick="setFirSec('metre')">metre</button>
+                <button class="elements" id="second" onclick="setFirSec('second')">second</button>
+                <button class="elements" id="kilogram" onclick="setFirSec('kilogram')">kilogram</button>
+                <button class="elements" id="ampere" onclick="setFirSec('ampere')">ampere</button>
+                <button class="elements" id="kelvin" onclick="setFirSec('kelvin')">kelvin</button>
+                <button class="elements" id="mole" onclick="setFirSec('mole')">mole</button>
+                <button class="elements" id="candela" onclick="setFirSec('candela')">candela</button>
+            </div>
+            <div class="have" id="haveLine2">
+                <button class="elements" id="one" onclick="setFirSec('one')">1</button>
+                <button class="elements" id="radian" onclick="setFirSec('radian')">radian</button>
+                <button class="elements" id="steradian" onclick="setFirSec('steradian')">steradian</button>
+                <button class="elements" id="hertz" onclick="setFirSec('hertz')">hertz</button>
+                <button class="elements" id="newton" onclick="setFirSec('newton')">newton</button>
+                <button class="elements" id="pascal" onclick="setFirSec('pascal')">pascal</button>
+                <button class="elements" id="joule" onclick="setFirSec('joule')">joule</button>
+            </div>
+            <div class="have" id="haveLine3">
+                <button class="elements" id="watt" onclick="setFirSec('watt')">watt</button>
+                <button class="elements" id="coulomb" onclick="setFirSec('coulomb')">coulomb</button>
+                <button class="elements" id="area" onclick="setFirSec('area')">area</button>
+                <button class="elements" id="volume" onclick="setFirSec('volume')">volume</button>
+                <button class="elements" id="velocity" onclick="setFirSec('velocity')">velocity</button>
+                <button class="elements" id="acceleration" onclick="setFirSec('acceleration')">acceler ation</button>
+                <button class="elements" id="density" onclick="setFirSec('density')">density</button>
+            </div>
+            <div class="have" id="haveLine4">
+                <button class="elements" id="lumen" onclick="setFirSec('lumen')">lumen</button>
+                <button class="elements" id="lux" onclick="setFirSec('lux')">lux</button>
+                <!--빈 버튼-->
+                <button class="elements"></button>
+                <button class="elements"></button>
+                <button class="elements"></button>
+                <button class="elements"></button>
+                <button class="elements"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
