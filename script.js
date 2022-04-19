@@ -27,14 +27,23 @@ var player = {
         "weber": { "L": 2, "T": -2, "M": 1, "I": -1, "TH": 0, "N": 0, "J": 0 },
         "tesla": { "L": 0, "T": -2, "M": 1, "I": -1, "TH": 0, "N": 0, "J": 0 },
         "henry": { "L": 2, "T": -2, "M": 1, "I": -2, "TH": 0, "N": 0, "J": 0 },
+        "lumen": { "L": 0, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 1 },
+        "lux": { "L": -2, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 1 },
+        "gray": { "L": 2, "T": -2, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 0 },
+        "katal": { "L": 0, "T": -1, "M": 0, "I": 0, "TH": 0, "N": 1, "J": 0 },
         "area": { "L": 2, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 0 },
         "volume": { "L": 3, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 0 },
         "velocity": { "L": 1, "T": -1, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 0 },
         "acceleration": { "L": 1, "T": -2, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 0 },
         "wavenumber": { "L": -1, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 0 },
         "density": { "L": -3, "T": 0, "M": 1, "I": 0, "TH": 0, "N": 0, "J": 0 },
-        "lumen": { "L": 0, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 1 },
-        "lux": { "L": -2, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 0, "J": 1 }
+        "surface density": { "L": -2, "T": 0, "M": 1, "I": 0, "TH": 0, "N": 0, "J": 0 },
+        "specific volume": { "L": 3, "T": 0, "M": -1, "I": 0, "TH": 0, "N": 0, "J": 0 },
+        "current density": { "L": -2, "T": 0, "M": 0, "I": 1, "TH": 0, "N": 0, "J": 0 },
+        "magnetic field strength": { "L": -1, "T": 0, "M": 0, "I": 1, "TH": 0, "N": 0, "J": 0 },
+        "concentration": { "L": -3, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 1, "J": 0 },
+        "mass concentration": { "L": -3, "T": 0, "M": 1, "I": 0, "TH": 0, "N": 0, "J": 0 },
+        "luminance": { "L": -2, "T": 0, "M": 0, "I": 0, "TH": 0, "N": 1, "J": 0 },
     }
 }
 
@@ -45,13 +54,15 @@ function getKeyByValue(object, value) {
 }
 
 function setFirSec(id) {
-    if (player.fir == "") {
-        player.fir = id;
-    } else if (player.sec == "") {
-        player.sec = id;
-    } else {
-        player.fir = id;
-        player.sec = "";
+    if (!document.getElementById(id).innerHTML == "") {
+        if (player.fir == "") {
+            player.fir = id;
+        } else if (player.sec == "") {
+            player.sec = id;
+        } else {
+            player.fir = id;
+            player.sec = "";
+        }
     }
 }
 
