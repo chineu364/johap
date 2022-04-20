@@ -20,9 +20,10 @@
             </div>
             <button id="calc">조합하기</button>
         </div>
-        <p id="haveNumber">you have 2 units</p>
+        <p id="haveNumber">you have NaN/NaN(NaN%) units</p>
         <div id="have">
             <div class="have" id="haveLine1">
+                <!--base units-->
                 <button class="elements" id="metre" onclick="setFirSec('metre')">metre</button>
                 <button class="elements" id="second" onclick="setFirSec('second')">second</button>
                 <button class="elements" id="kilogram" onclick="setFirSec('kilogram')">kilogram</button>
@@ -30,6 +31,7 @@
                 <button class="elements" id="kelvin" onclick="setFirSec('kelvin')">kelvin</button>
                 <button class="elements" id="mole" onclick="setFirSec('mole')">mole</button>
                 <button class="elements" id="candela" onclick="setFirSec('candela')">candela</button>
+                <!--derived units-->
                 <button class="elements" id="one" onclick="setFirSec('one')">1</button>
             </div>
             <div class="have" id="haveLine2">
@@ -56,6 +58,7 @@
                 <button class="elements" id="lux" onclick="setFirSec('lux')">lux</button>
                 <button class="elements" id="gray" onclick="setFirSec('gray')">gray</button>
                 <button class="elements" id="katal" onclick="setFirSec('katal')">katal</button>
+                <!--examples of coherent derived units in terms of base units-->
                 <button class="elements" id="area" onclick="setFirSec('area')">area</button>
                 <button class="elements" id="volume" onclick="setFirSec('volume')">volume</button>
                 <button class="elements" id="velocity" onclick="setFirSec('velocity')">velocity</button>
@@ -71,6 +74,27 @@
                 <button class="elements" id="concentration" onclick="setFirSec('concentration')">concentration</button>
                 <button class="elements" id="mass concentration" onclick="setFirSec('mass concentration')">mass concentration</button>
                 <button class="elements" id="luminance" onclick="setFirSec('luminance')">luminance</button>
+            </div>
+            <div class="have" id="haveLine6">
+                <!--examples of derived units that include units with special names-->
+                <button class="elements" id="dynamic viscosity" onclick="setFirSec('dynamic viscosity')">dynamic viscosity</button>
+                <button class="elements" id="moment of force" onclick="setFirSec('moment of force')">moment of force</button>
+                <button class="elements" id="surface tension" onclick="setFirSec('surface tension')">surface tension</button>
+                <button class="elements" id="angular velocity" onclick="setFirSec('angular velocity')">angular velocity</button>
+                <button class="elements" id="angular acceleration" onclick="setFirSec('angular acceleration')">angular acceleration</button>
+                <button class="elements" id="heat flux density" onclick="setFirSec('heat flux density')">heat flux density</button>
+                <button class="elements" id="entropy" onclick="setFirSec('entropy')">entropy</button>
+                <button class="elements" id="specific entropy" onclick="setFirSec('specific entropy')">specific entropy</button>
+            </div>
+            <div class="have" id="haveLine7">
+                <button class="elements" id="thermal conductivity" onclick="setFirSec('thermal conductivity')">thermal conductivity</button>
+                <button class="elements" id="energy density" onclick="setFirSec('energy density')">energy density</button>
+                <button class="elements" id="electric field strength" onclick="setFirSec('electric field strength')">electric field strength</button>
+                <button class="elements" id="electric charge density" onclick="setFirSec('electric charge density')">electric charge density</button>
+                <button class="elements" id="electric flux density" onclick="setFirSec('electric flux density')">electric flux density</button>
+                <button class="elements" id="permittivity" onclick="setFirSec('permittivity')">permittivity</button>
+                <button class="elements" id="permeability" onclick="setFirSec('permeability')">permeability</button>
+                <button class="elements"></button>
             </div>
         </div>
     </div>
