@@ -70,14 +70,9 @@ function getKeyByValue(object, value) {
 }
 
 function setSel(id) {
-    if (player.selectElement == "1") { player.selectElement = "one" }
     document.getElementById(player.selectElement).style["backgroundColor"] = "#ffffff";
     document.getElementById(id).style["backgroundColor"] = "#929292";
-    if (id == "one") {
-        player.selectElement = "1";
-    } else {
-        player.selectElement = id;
-    }
+    player.selectElement = id;
 }
 
 function setName(ot) {
@@ -132,7 +127,7 @@ document.getElementById("calc").addEventListener("click", function() {
         });
     }
     if (imsi !== undefined) {
-        if (imsi == "one") { document.getElementById(imsi).innerHTML = "1"; } else { document.getElementById(imsi).innerHTML = imsi; }
+        document.getElementById(imsi).innerHTML = imsi;
         if (!player.haveElement.includes(imsi)) { player.haveElement.push(imsi); }
         console.log("you made " + imsi);
     }
