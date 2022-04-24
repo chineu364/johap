@@ -70,6 +70,7 @@ function getKeyByValue(object, value) {
 }
 
 function setSel(id) {
+    if (!player.haveElement.includes(id)) { return }
     document.getElementById(player.selectElement).style["backgroundColor"] = "#ffffff";
     document.getElementById(id).style["backgroundColor"] = "#929292";
     player.selectElement = id;
